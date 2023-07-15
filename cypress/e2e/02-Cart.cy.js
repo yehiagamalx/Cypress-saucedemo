@@ -13,12 +13,12 @@ describe("testing cart scenarios", () => {
     cy.get(".title").should("contain", "Products");
   });
 
-  it("Add item to the cart", () => {
+  it("Add an item to the cart", () => {
     cy.get('[data-test="add-to-cart-sauce-labs-backpack"]').click();
     cy.get(".shopping_cart_badge").should("exist");
   });
 
-  it("Remove item from the cart", () => {
+  it("Remove an item from the cart", () => {
     cy.get('[data-test="add-to-cart-sauce-labs-backpack"]').click();
     cy.get(".shopping_cart_badge").should("exist");
     cy.get('[data-test="remove-sauce-labs-backpack"]').click();
