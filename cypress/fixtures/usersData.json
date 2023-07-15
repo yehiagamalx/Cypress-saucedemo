@@ -6,5 +6,11 @@
   "locked": {
     "userName": "locked_out_user",
     "password": "secret_sauce"
+  },
+
+  "billing": {
+    "firstName": "ahmed",
+    "lastName": "mohamed",
+    "postal": "32452"
   }
 }
