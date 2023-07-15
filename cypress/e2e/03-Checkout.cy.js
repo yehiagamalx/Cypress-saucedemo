@@ -10,7 +10,7 @@ describe("testing checkout scenario", () => {
       cy.get('[data-test="password"]').type(users.standard.password);
     });
     cy.get('[data-test="login-button"]').click();
-    cy.get(".title").should("contain", "Products");
+    cy.location("pathname").should("equal", "/inventory.html");
     cy.get('[data-test="add-to-cart-sauce-labs-backpack"]').click();
     cy.get(".shopping_cart_badge").should("exist");
   });
